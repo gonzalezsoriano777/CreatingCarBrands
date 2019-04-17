@@ -10,6 +10,7 @@ namespace LegosHw_CreatingCarBrands
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello, world!");
         }
     }
 }
