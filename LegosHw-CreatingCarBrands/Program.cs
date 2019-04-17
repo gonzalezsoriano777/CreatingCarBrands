@@ -7,21 +7,25 @@ using System.Threading.Tasks;
 namespace LegosHw_CreatingCarBrands
 {
     class Cars
-    {
+    {    
 
-        public string colour;
-        public string manufacturer;
-        public string color = "Red";
-        public string brand = "Toyota";
+        public Cars(string _color, string _manufacturer)
+        {
+            this.colour = _color;
+            this.manufacturer = _manufacturer;
+        }
+
+        public string colour { get; set; }
+        public string manufacturer { get; set; }
 
         static void Main(string[] args)
         {
-            Cars Car1 = new Cars();
+            Cars Car1 = new Cars("Red", "Toyota");
             
-            Console.WriteLine("Hello, MyCar");
-            Console.WriteLine(Car1.color);
-            Console.WriteLine(Car1.brand);
 
+            Console.WriteLine("MyCar is " + Car1.colour + " And is a " + Car1.manufacturer);
+           
+           
 
         }
     }
