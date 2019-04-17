@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace LegosHw_CreatingCarBrands
 {
-    class Program
+    class Cars
     {
+        public string color = "Red";
+        public string brand = "Toyota";
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, world!!");
+            Cars Car1 = new Cars();
+            
+            Console.WriteLine("Hello, MyCar");
+            Console.WriteLine(Car1.color);
+            Console.WriteLine(Car1.brand);
         }
     }
 }
