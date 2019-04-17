@@ -6,27 +6,37 @@ using System.Threading.Tasks;
 
 namespace LegosHw_CreatingCarBrands
 {
-    class Cars
+    public class Cars : CarOne
     {    
-
-        public Cars(string _color, string _manufacturer)
-        {
-            this.colour = _color;
-            this.manufacturer = _manufacturer;
-        }
-
-        public string colour { get; set; }
-        public string manufacturer { get; set; }
-
         static void Main(string[] args)
         {
-            Cars Car1 = new Cars("Red", "Toyota");
+            Cars myCar = new Cars();
+            CarOne Car1 = new CarOne();
+
             
 
-            Console.WriteLine("MyCar is " + Car1.colour + " And is a " + Car1.manufacturer);
-           
-           
-
         }
+    }
+
+    public class CarOne
+    {
+
+        public CarOne(){
+        }
+
+        public string Colour { get; set; }
+        public string manufacturer { get; set; }
+
+    }
+
+    public class SaloonCar : CarOne
+    {
+        // class for brands
+        public SaloonCar(){
+        }
+
+        public int numberofSeats { get; set; }
+
+
     }
 }
