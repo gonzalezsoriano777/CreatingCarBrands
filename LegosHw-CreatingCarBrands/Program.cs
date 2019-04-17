@@ -8,6 +8,9 @@ namespace LegosHw_CreatingCarBrands
 {
     class Cars
     {
+
+        public string colour;
+        public string manufacturer;
         public string color = "Red";
         public string brand = "Toyota";
 
@@ -18,6 +21,8 @@ namespace LegosHw_CreatingCarBrands
             Console.WriteLine("Hello, MyCar");
             Console.WriteLine(Car1.color);
             Console.WriteLine(Car1.brand);
+
+
         }
     }
 }
