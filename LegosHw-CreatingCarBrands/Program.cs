@@ -31,7 +31,7 @@ namespace LegosHw_CreatingCarBrands
 
     public class SaloonCar : CarOne
     {
-        // class for brands
+        
         public SaloonCar(){
         }
 
