@@ -4,32 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace LegosHw_CreatingCarBrands
 {
-    public class Cars : CarOne
-    {    
+    public class Cars
+    {
+        public string color;
+        public string manufacturer;
+
+        public void CarOne()
+        {
+            Console.WriteLine("Hello, my car is " + color + " And is a " + manufacturer);
+        }
+
         static void Main(string[] args)
         {
             Cars myCar = new Cars();
-            CarOne Car1 = new CarOne();
+            myCar.color = "Red";
+            myCar.manufacturer = "Toyota";
+            myCar.CarOne();
 
             
 
         }
     }
 
-    public class CarOne
-    {
 
-        public CarOne(){
-        }
 
-        public string Colour { get; set; }
-        public string manufacturer { get; set; }
-
-    }
-
-    public class SaloonCar : CarOne
+    public class SaloonCar
     {
         
         public SaloonCar(){
