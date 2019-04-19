@@ -25,8 +25,15 @@ namespace LegosHw_CreatingCarBrands
             carOne.Manufacturer = "Toyota";
             carOne.CarOne();
 
-            SaloonCar saloonCarOne = new SaloonCar();
-            
+            SaloonCar saloonCarOne = new SaloonCar(2);
+            Console.WriteLine("SaloonCarOne: {0}", saloonCarOne.NumberOfSeats);
+
+            SaloonCar saloonCarTwo = new SaloonCar(3, "Nissan");
+            Console.WriteLine("SaloonCarTwo: has {0} seats and is a {1}", saloonCarTwo.NumberOfSeats, saloonCarTwo.Manufacturer);
+
+            SaloonCar saloonCarThree = new SaloonCar(4, "Ford", "Purple");
+            Console.WriteLine("SaloonCarThree: has {0} seats and is a {1} and is {2}", saloonCarThree.NumberOfSeats, saloonCarThree.Manufacturer, saloonCarThree.Colour);
+
         }
     }
 
