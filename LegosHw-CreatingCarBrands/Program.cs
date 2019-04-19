@@ -9,62 +9,21 @@ namespace LegosHw_CreatingCarBrands
 {
     public class Cars
     {
-        public string color;
-        public string manufacturer;
+        public string Colour;
+        public string Manufacturer;
 
         public void CarOne()
         {
-            Console.WriteLine("Hello, my car is {0} and is a {1}", color, manufacturer);
+            Console.WriteLine("Hello, my car is {0} and is a {1} ", Colour, Manufacturer);
         }
+
 
         static void Main(string[] args)
         {
-            Cars myCar = new Cars();
-            myCar.color = "Red";
-            myCar.manufacturer = "Toyota";
-            myCar.CarOne();
-
-
-            
-            
-
-            
-
+            Cars carOne = new Cars();
+            carOne.Colour = "Red";
+            carOne.Manufacturer = "Toyota";
+            carOne.CarOne();
         }
-    }
-
-
-
-    public class SaloonCar : Cars
-    {
-
-        public int NumberOfSeats;
-        public string Manufacturer;
-        public string Colour;
-
-        // C1
-        public SaloonCar(int numberOfSeats)
-        {
-            this.NumberOfSeats = numberOfSeats;
-        }
-
-        //C2
-        public SaloonCar(int numberOfSeats, string manufacturer)
-        {
-            this.NumberOfSeats = numberOfSeats;
-            this.Manufacturer = manufacturer;
-        }
-
-        //C3
-        public SaloonCar(int numberOfSeats, string manufacturer, string colour)
-        {
-            this.NumberOfSeats = numberOfSeats;
-            this.Manufacturer = manufacturer;
-            this.Colour = colour;
-        }
-
-        
-
-
     }
 }
