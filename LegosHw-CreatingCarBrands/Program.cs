@@ -24,6 +24,42 @@ namespace LegosHw_CreatingCarBrands
             carOne.Colour = "Red";
             carOne.Manufacturer = "Toyota";
             carOne.CarOne();
+
+            SaloonCar saloonCarOne = new SaloonCar();
+            
+        }
+    }
+
+
+    public class SaloonCar : Cars
+    {
+        public int NumberOfSeats;
+
+
+        public SaloonCar()
+        {
+
+        }
+
+        //C1
+        public SaloonCar(int numberOfSeats)
+        {
+            this.NumberOfSeats = numberOfSeats;
+        }
+
+        //C2
+        public SaloonCar(int numberOfSeats, string manufacturer)
+        {
+            this.NumberOfSeats = numberOfSeats;
+            this.Manufacturer = manufacturer;
+        }
+
+        //C3
+        public SaloonCar(int numberOfSeats, string manufacturer, string colour)
+        {
+            this.NumberOfSeats = numberOfSeats;
+            this.Manufacturer = manufacturer;
+            this.Colour = colour;
         }
     }
 }
