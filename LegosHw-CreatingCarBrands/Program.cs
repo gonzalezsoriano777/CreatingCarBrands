@@ -14,7 +14,7 @@ namespace LegosHw_CreatingCarBrands
 
         public void CarOne()
         {
-            Console.WriteLine("Hello, my car is " + color + " And is a " + manufacturer);
+            Console.WriteLine("Hello, my car is {0} and is a {1}", color, manufacturer);
         }
 
         static void Main(string[] args)
