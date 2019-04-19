@@ -24,7 +24,8 @@ namespace LegosHw_CreatingCarBrands
             myCar.manufacturer = "Toyota";
             myCar.CarOne();
 
-            SaloonCar NewBrand = new SaloonCar();
+
+            
             
 
             
@@ -36,11 +37,33 @@ namespace LegosHw_CreatingCarBrands
 
     public class SaloonCar : Cars
     {
-        
-        public SaloonCar(){
+
+        public int NumberOfSeats;
+        public string Manufacturer;
+        public string Colour;
+
+        // C1
+        public SaloonCar(int numberOfSeats)
+        {
+            this.NumberOfSeats = numberOfSeats;
         }
 
-        public int numberofSeats { get; set; }
+        //C2
+        public SaloonCar(int numberOfSeats, string manufacturer)
+        {
+            this.NumberOfSeats = numberOfSeats;
+            this.Manufacturer = manufacturer;
+        }
+
+        //C3
+        public SaloonCar(int numberOfSeats, string manufacturer, string colour)
+        {
+            this.NumberOfSeats = numberOfSeats;
+            this.Manufacturer = manufacturer;
+            this.Colour = colour;
+        }
+
+        
 
 
     }
